@@ -1,0 +1,141 @@
+$font: 'Russo One', sans-serif;
+
+.btn {
+    width: 10%;
+    position: relative;
+    height: 5vh;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: rgba(176,169,176,0.45);
+    color: white;
+    cursor: pointer;
+    outline: none;
+    white-space: nowrap;
+
+    &--swap {
+		span {
+			position: absolute;
+			top: 7px;
+			left: 0px;
+			width: 100%;
+            height: 100%;
+            border-radius: 10px;
+			box-sizing: border-box;
+			opacity: 0;
+			color: black;
+			transition: 0.35s ease;
+		}
+		&::before {
+			content: "";
+			left: 0;
+            top: 0;
+            border-radius: 6px;
+			position: absolute;
+			width: 0;
+			height: 100%;
+			background-color: rgba(114, 228, 232,1);
+			transition: 0.5s ease;
+		}
+		&:hover {
+			&:before {
+				width: 100%;
+			}
+			span {
+				opacity: 1;
+			}
+		}
+    }
+}
+
+
+.wholeAPP{
+    background-image: url(../../../Images/appBack.jpg);
+    background-size: 100%;
+    background-position: center center;
+    position: relative;
+    height: 100vh;
+
+    text-align: center;
+
+    font-family: $font;
+    color: white;  
+    
+    button {
+        outline: none;
+    }
+}
+
+.divUpper{
+    margin-top: -2.75vh;
+}
+
+.divMain{
+    margin-top: 5vh;
+}
+
+.divMain span{
+    margin-top: 2vh;
+    display: block;
+}
+
+.MainSpan{
+    font-size: 5vh;
+}
+
+.divButton{
+    margin-top: 5vh;
+}
+
+.MoveBtn{
+    @extend .btn;
+}
+
+.divTechno{
+    margin-top: 5vh;
+}
+
+.technologie {
+    position: absolute;
+    width: 15vw;
+    height: 35vh;
+    margin-top: 4vh;
+
+    background: rgba(0,0,0,0.4);
+    box-shadow: -2px -2px 29px 23px rgba(176,169,176,0.45);
+}
+
+.technologie span{
+    margin-top: 1vh;
+    display: block;
+}
+
+.pierwszy {
+    margin-left: 30vw; 
+    }
+    
+.drugi {
+    margin-left: 55vw; 
+    }
+
+.divContact {
+    position: static;
+    margin-top: 47vh;
+}
+
+.divContact span{
+    display: block;
+    margin-bottom: 2vh;
+}
+
+.divContactButtons {
+    display: inline-flex;
+    width: 100%;
+}
+
+.ContactButton {
+    margin-left: 2vw;
+}
+
+.ContactButton1 {
+    margin-left: 33vw;
+}

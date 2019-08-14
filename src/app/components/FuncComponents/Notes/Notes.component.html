@@ -1,0 +1,12 @@
+<div class="divWhole">
+  <div class="divButtons">
+    <button class="button" (click)="slideCreateNote()">Create note &nbsp;<i class="far fa-clipboard"></i></button>
+    <div *ngIf="slideCreateNotevar" class="divCreateNote">
+      <div class="arrow-up"></div>
+      <app-Note></app-Note>
+    </div>
+  </div>
+  <div>
+    <app-NoteList></app-NoteList>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<!--
+<table class="table table-hover">
+    <thead>
+      <th>Name</th>
+      <th>Date</th>
+      <th>Content</th>
+      <th></th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let note of list">
+        <td>{{note.name}}</td>
+        <td>{{note.date}}</td>
+        <td>{{note.content}}</td>
+      </tr>
+    </tbody>
+  </table>
+-->
+<div class="divNoteList">
+  <div class="divNote" *ngFor="let note of list">
+    <div class="noteName">{{note.name}}</div>
+    <div class="noteDate">{{note.date}}</div>
+    <hr/>
+    <div class="noteContent">{{note.content}}</div>
+  </div>
+</div>

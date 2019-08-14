@@ -1,0 +1,26 @@
+$font: "Russo One", sans-serif;
+
+.wholesignindiv{
+    font-family: $font;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.rows {
+    margin-bottom: 1vh;
+}
+
+.button {
+    border-radius: 10px;
+    background-color: rgba(45, 218, 145, 0.5);
+    border-color: rgba(45, 218, 145, 0.4);
+    color: black;
+    border-width: 0.3vh;
+}
+
+.regbutton {
+    @extend .button;
+    background-color: rgb(240, 240, 240);
+}

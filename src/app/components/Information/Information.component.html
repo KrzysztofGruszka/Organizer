@@ -1,0 +1,121 @@
+<div class="whole">
+  <div class="TitleDiv" [@fadeIn]>
+    <div class="titlediv1" style="display:inline-block">
+      <h1 style="font-weight: bold;">
+        The application supports many<br />aspects of daily organization!
+      </h1>
+    </div>
+    <div class="titlediv2" style="display:inline-block">
+      <h3>Are you asking what aspects?</h3>
+      <h1 style="font-weight: bold;">Let's find out!</h1>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="desc">
+      <div class="low_desc1" [@fadeIn]>
+        <hr class="hr1" />
+        <h4>To-Do List</h4>
+        <hr class="hr1" />
+        <div class="low_desc_text1">
+          The basic application option is to create a list of duties.
+          Each user will have the option to manage their lists,
+          unchecking the duties performed and assigning specific lists
+          to a given day.
+        </div>
+      </div>
+      <div class="imagecon1" [@flyInRight]>
+        <div class="image1 img1" style="display: inline-flex"></div>
+      </div>
+    </div>
+
+    <div class="desc">
+      <div class="imagecon2" [@flyInLeft]>
+        <div class="image1 img2" style="display: inline-flex"></div>
+      </div>
+      <div class="low_desc2" [@fadeIn]>
+        <hr class="hr" />
+        <h4>Calendar</h4>
+        <hr class="hr" />
+        <div class="low_desc_text">
+          Create your own task calendar, add short notes or information about appointments. 
+          Each user is assigned the possibility of attaching additional application elements to the day, 
+          i.e. a list things to-do, shopping list, daily workout plans or adding a previously planned 
+          meal to the recipe day.
+        </div>
+      </div>
+    </div>
+
+    <div class="desc">
+      <div class="low_desc1" [@fadeIn]>
+        <hr class="hr1" />
+        <h4>Shopping List</h4>
+        <hr class="hr1" />
+        <div class="low_desc_text1">
+          Have a shopping list with you always. Plan shopping for the future
+          add it to a specific day, month or even year and never again
+          you will lose cards or you won't forget anything important.
+        </div>
+      </div>
+      <div class="imagecon1" [@flyInRight]>
+        <div class="image1 img3" style="display: inline-flex"></div>
+      </div>
+    </div>
+
+    <div class="desc">
+      <div class="imagecon2" [@flyInLeft]>
+        <div class="image1 img4" style="display: inline-flex"></div>
+      </div>
+      <div class="low_desc2" [@fadeIn]>
+        <hr class="hr" />
+        <h4>Recipes</h4>
+        <hr class="hr" />
+        <div class="low_desc_text">
+          Create your recipe list. Each profile will have a bookmark culinary instructions 
+          and inspiration where other users through sharing will be able to watch your 
+          culinary conquests. In simple the way you will not have zagwozdki what to cook today because
+          the application gives you the opportunity to add a recipe to a specific day.
+        </div>
+      </div>
+    </div>
+
+    <div class="desc">
+      <div class="low_desc1" [@fadeIn]>
+        <hr class="hr1" />
+        <h4>Training</h4>
+        <hr class="hr1" />
+        <div class="low_desc_text1" [@fadeIn]>
+          Is it hard to keep fit? Do you often forget about daily workouts?
+          Plan your training, add it to your planned day, and we'll tell you 
+          about itwe will remind you.
+        </div>
+      </div>
+      <div class="imagecon1" [@flyInRight]>
+        <div class="image1 img5" style="display: inline-flex"></div>
+      </div>
+    </div>
+
+    <div style="width: 100%; height: 10vh;"></div>
+
+    <button class="languagebtn" (click)="openLanguageMenu()">
+      Menu Jezykow &nbsp;<span class="glyphicon glyphicon-arrow-down"></span>
+    </button>
+    <button class="topbtn" (click)="topFunction()">
+      <span class="glyphicon glyphicon-arrow-up"></span>
+    </button>
+    <button class="backbtn" routerLink="/home">
+      <span class="glyphicon glyphicon-arrow-left"></span>&nbsp; Wróć
+    </button>
+
+    <div id="languageMenu" class="languagemenu">
+      <a (click)="InProgress()"
+        >Polski
+        <div class="languageimgPoland">&nbsp;&nbsp;</div></a
+      >
+      <a (click)="InProgress()"
+        >Angielski
+        <div class="languageimgAng">&nbsp;&nbsp;</div></a
+      >
+    </div>
+  </div>
+</div>

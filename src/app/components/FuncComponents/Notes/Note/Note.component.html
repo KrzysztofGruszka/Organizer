@@ -1,0 +1,25 @@
+<div class="divWhole">
+  <form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+    <input type="hidden" name="who" #who="ngModel" [(ngModel)]="service.formData.who" value="{{ user?.email }}" class="form-control">
+    <input type="hidden" name="id" #id="ngModel" [(ngModel)]="service.formData.id">
+    <div class="row"> 
+      <div class="col-md-6 mb-2">
+        <label for="name">Name</label>
+        <input name="name" #name="ngModel" [(ngModel)]="service.formData.name" class="form-control">
+      </div>
+      <div class="col-md-6 mb-2">
+        <label for="date">Date</label>
+        <input name="date" #date="ngModel" [(ngModel)]="service.formData.date" class="form-control">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="content">Content</label>
+      <input name="content" #content="ngModel" [(ngModel)]="service.formData.content" class="form-control">
+    </div>
+    <input type="hidden" name="done" #id="ngModel" [(ngModel)]="service.formData.done">
+    <div class="form-group">
+      <button type="submit" class="SbtBtn">Submit</button>
+    </div>
+  </form>
+  <button class="button" (click)="resetForm()">Clear</button>
+</div>

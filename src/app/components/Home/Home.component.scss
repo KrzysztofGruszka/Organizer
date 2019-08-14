@@ -1,0 +1,170 @@
+$font: "Russo One", sans-serif;
+$bordercolor: rgb(104, 230, 160);
+
+.wholehomediv {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../../../Images/congruent_pentagon.png);
+  background: cover;
+  font-family: $font;
+  padding-top: 10vh;
+}
+
+.HomeElements {
+  position: absolute;
+
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 0.2vw solid;
+  border-radius: 10px;
+  border-color: $bordercolor;
+}
+
+.HomeMenu {
+  @extend .HomeElements;
+  top: 2.175vh;
+  left: 0.1vw;
+
+  width: 10vw;
+  height: 97.5vh;
+}
+
+.HomeContentAll {
+  position: absolute;
+  top: 15vh;
+  left: 25vw;
+
+  width: 63vw;
+  height: 60vh;
+
+  .HomeContent {
+    left: 2vw;
+  }
+
+  .line {
+    right: 15vw;
+    top: 0;
+
+    height: 99%;
+
+    border: 3px solid $bordercolor;
+  }
+
+  .HomeSmallMenu {
+    right: 2vw;
+    margin-left: 10px;
+  }
+}
+
+.hellodiv {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100vw;
+  height: 2.1vh;
+  z-index: 99;
+  transition: 0.5s;
+  overflow: hidden;
+  background-image: url(../../../Images/ha.jpg);
+  background: cover;
+  border-bottom: 0.2vw solid;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-color: black;
+}
+
+.welcomediv {
+  display: block;
+  width: 100vw;
+}
+
+.movedowndiv {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  width: 100vw;
+  height: 2vh;
+  border-radius: 4px;
+  z-index: 99;
+}
+
+.wholehomediv button {
+  display: block;
+}
+
+.btn {
+  width: 10%;
+  position: relative;
+  height: 5vh;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: rgba(176, 169, 176, 0.45);
+  color: white;
+  cursor: pointer;
+  outline: none;
+  white-space: nowrap;
+
+  &--swap {
+    span {
+      position: absolute;
+      top: 7px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      box-sizing: border-box;
+      opacity: 0;
+      color: black;
+      transition: 0.35s ease;
+    }
+    &::before {
+      content: "";
+      left: 0;
+      top: 0;
+      border-radius: 10px;
+      position: absolute;
+      width: 0;
+      height: 100%;
+      background-color: rgba(114, 228, 232, 1);
+      transition: 0.5s ease;
+    }
+    &:hover {
+      &:before {
+        width: 100%;
+      }
+      span {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.divContact {
+  position: static;
+  text-align: center;
+  margin-top: 75vh;
+  transition: 0.5s;
+}
+
+.divContact span {
+  display: block;
+  margin-bottom: 2vh;
+  color: rgba(176, 169, 176, 0.45);
+  text-shadow: -0.01vh 0 black, 0 0.01vh black, 0.01vh 0 black, 0 -0.01vh black;
+}
+
+.divContactButtons {
+  display: inline-flex;
+  width: 100%;
+}
+
+.ContactButton {
+  margin-left: 2vw;
+  outline: none;
+}
+
+.ContactButton1 {
+  margin-left: 33vw;
+  outline: none;
+}
+

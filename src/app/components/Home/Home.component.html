@@ -1,0 +1,48 @@
+<div class="wholehomediv">
+  <!--
+    <div class="HomeNavBar">
+        navbar
+      </div>
+    -->
+
+  <div class="HomeMenu" [@flyInLeft]>
+    <app-HomeMenu></app-HomeMenu>
+  </div>
+
+  <div class="HomeContentAll">
+    <div class="HomeContent">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+  <div id="divContact" class="divContact" *ngIf="divContactVisibilty">
+    <span>Feel free to contact with me!</span>
+    <div class="divContactButtons">
+      <button
+        class="btn btn--swap ContactButton ContactButton1"
+        (click)="MoveTo('https://www.linkedin.com/in/krzysztof-gruszka-60a30618a/')">
+        LinkedIn &nbsp;<i class="fab fa-linkedin-in"></i>
+        <span>LinkedIn&nbsp;&nbsp;<i class="fab fa-linkedin-in"></i></span>
+      </button>
+      <button
+        class="btn btn--swap ContactButton"
+        (click)="MoveTo('https://github.com/KrzysztofGruszka?tab=repositories')">
+        GitHub &nbsp; <i class="fab fa-github"></i>
+        <span>GitHub&nbsp;&nbsp;&nbsp;<i class="fab fa-github"></i></span>
+      </button>
+      <button
+        class="btn btn--swap ContactButton ContactButton3"
+        (click)="copyMessage('krzysztof.s.gruszka@gmail.com')">
+        Copy E-mail &nbsp;<i class="glyphicon glyphicon-envelope"></i>
+        <span>&nbsp;Copy E-mail&nbsp;&nbsp;<i class="glyphicon glyphicon-envelope"></i></span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div id="hellodiv" class="hellodiv">
+  <div class="welcomediv" *ngIf="true">
+    <app-Welcome></app-Welcome>
+  </div>
+  <div class="movedowndiv" (click)="movehellodiv()"></div>
+</div>

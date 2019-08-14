@@ -1,0 +1,53 @@
+$font: "Russo One", sans-serif;
+$bordercolor: rgb(104, 230, 160);
+
+.divWhole{
+font-family: $font;
+
+    button{
+        outline: none;
+    }
+}
+
+.divButtons{
+   margin-bottom: 3vh; 
+}
+
+.button{
+    border-radius: 10px;
+    border-width: thick;
+
+    background-color: rgba(45, 218, 145, 0.7);
+    border-color: rgba(45, 218, 145, 0.7);
+
+    outline: none;
+}
+
+.divCreateNote {
+    z-index: 99;
+    position: absolute;
+    top: 8vh;
+    left: 0vw;
+  
+    padding: 1vh 2vw;
+    width: 25vw;
+    height: 30vh;
+  
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 0.2vw solid;
+    border-radius: 10px;
+    border-color: $bordercolor;
+}
+
+.arrow-up {
+    position: absolute;
+    top: -3.1vh;
+    left: 0.5vw;
+
+    width: 0; 
+    height: 0; 
+    border-left: 0.5vw solid transparent;
+    border-right: 0.5vw solid transparent;
+    
+    border-bottom: 3vh solid $bordercolor;
+}

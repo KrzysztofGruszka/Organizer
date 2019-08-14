@@ -1,0 +1,27 @@
+<div class="wholeMenu">
+  <div class="topmenu">
+    <div class="accimage"></div>
+      <div *ngIf="!user" class="divlogged" [@fadeIn]>You`re not logged in<p><i class="far fa-smile-beam"></i></p>
+      </div>
+      <div *ngIf="user" class="divlogged" [@fadeIn]>Logged in as {{ user?.email }}<p><i class="fas fa-hand-paper"></i></p>
+      </div>
+      <div *ngIf="!user" [@fadeIn]>
+        <hr class="hr" />
+        <button (click)="slideSignIn()">Sign In</button>
+        <div *ngIf="slideSignInvar" class="divSignIn"><div class="arrow-left"></div><app-SignIn></app-SignIn></div>
+        <button (click)="slideSignUp()">Sign Up</button>
+        <div *ngIf="slideSignUpvar" class="divSignUp"><div class="arrow-left"></div><app-SignUp></app-SignUp></div>
+      </div>
+      <hr class="hr" />
+      <button routerLink="/home/calendar">Calendar</button>
+      <button routerLink="/home/notes">Notes</button>
+      <button routerLink="/home/shoppinglist">Shopping List</button>
+      <button routerLink="/home/recipes">Recipes</button>
+      <button routerLink="/home/training">Training</button>
+      <div class=divContact>
+        <hr class="hr" />
+        <button (click)="slideContact()">Contact</button>
+        <button *ngIf="user" [@fadeIn] (click)="logout()">LogOut</button>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,271 @@
+$backcolorbefore: lightgrey;
+$backcolorafter: lightslategrey;
+$font: "Russo One", sans-serif;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.whole {
+  font-family: $font;
+  background-image: url(../../../Images/congruent_pentagon.png);
+}
+
+.TitleDiv {
+  height: 18vh;
+  margin-left: 15vw;
+}
+
+.titlediv1 {
+  width: 50%;
+}
+
+.titlediv2 {
+  text-align: center;
+  width: 25%;
+}
+
+.Animation {
+  color: black;
+  position: relative;
+  transition: 800ms ease all;
+  outline: none;
+}
+
+.Animation:hover {
+  background: black;
+  color: white;
+}
+
+.Animation:before,
+Animation:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: white;
+  transition: 400ms ease all;
+}
+
+.Animation:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+.Animation:hover:before,
+Animation:hover:after {
+  width: 100%;
+  transition: 2000ms ease all;
+}
+
+.main {
+  width: 100%;
+}
+
+.desc {
+  height: 40vh;
+  display: inline-flex;
+
+  text-align: center;
+  justify-content: center;
+
+  margin-top: 7vh;
+}
+
+.low_desc {
+  height: 30vh;
+  width: 50%;
+}
+
+.low_desc1 {
+  @extend .low_desc;
+}
+
+.low_desc2 {
+  @extend .low_desc;
+  margin-right: 5vw;
+}
+
+.low_desc_text {
+  margin-top: 10vh;
+}
+
+.low_desc_text1 {
+  @extend .low_desc_text;
+  margin-left: 5vw;
+}
+
+.low_desc_text2 {
+  @extend .low_desc_text;
+}
+
+.imagecon {
+  width: 50%;
+  height: 40vh;
+}
+
+.imagecon1 {
+  @extend .imagecon;
+  background-color: rgba(211, 211, 211, 0.3);
+  margin-left: 5vw;
+}
+
+.imagecon2 {
+  @extend .imagecon;
+  background-color: rgba(250, 250, 250, 0.35);
+  margin-right: 5vw;
+}
+
+.image1 {
+  width: 30vw;
+  height: 30vh;
+
+  margin-top: 5vh;
+}
+
+.image_desc {
+  width: 39%;
+  margin-top: 10px;
+}
+
+.image_descv1 {
+  @extend .image_desc;
+  margin-left: 4%;
+  background-color: rgba(211, 211, 211, 0.5);
+}
+
+.image_descv2 {
+  @extend .image_desc;
+  margin-left: 8%;
+}
+
+.img1 {
+  background: url(../../../Images/todo.png) no-repeat center center;
+  background-size: cover;
+}
+
+.img2 {
+  background: url(../../../Images/planer.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.img3 {
+  background: url(../../../Images/listazakupow.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.img4 {
+  background: url(../../../Images/przepisy.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.img5 {
+  background: url(../../../Images/workout.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.hr {
+  border-color: black;
+  width: auto;
+}
+
+.hr1{
+  @extend .hr;
+  margin-left: 5vw;
+}
+
+.hr2{
+  @extend .hr;
+}
+
+.btn {
+  position: fixed;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background-color: $backcolorbefore;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: $backcolorafter;
+}
+
+.topbtn {
+  @extend .btn;
+  bottom: 0px;
+  right: 0px;
+  z-index: 99;
+  padding: 15px;
+}
+
+.backbtn {
+  @extend .btn;
+  width: 7vw;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  padding: 2vh;
+}
+
+.languagebtn {
+  @extend .btn;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  padding: 2vh;
+  width: 12vw;
+}
+
+.languagemenu {
+  height: 0vh;
+  width: 12vw;
+  position: fixed;
+  z-index: 99;
+  top: 7vh;
+  right: 0vw;
+  background-color: $backcolorbefore;
+  overflow: hidden;
+  transition: 0.5s;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.languagemenu a {
+  padding: 1vh, 3vw, 1vh, 1vw;
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  margin-left: 0.5vw;
+  margin-top: 0.5vh;
+}
+
+.languagemenu a:hover {
+  background-color: $backcolorafter;
+}
+
+.languageimg {
+  width: 2vw;
+  display: inline-block;
+  background: cover;
+}
+
+.languageimgPoland {
+  @extend .languageimg;
+  background: url(../../../Images/poland.png) no-repeat center center;
+  margin-left: 6vw;
+}
+
+.languageimgAng {
+  @extend .languageimg;
+  background: url(../../../Images/UK.png) no-repeat center center;
+  margin-left: 4.5vw;
+}
